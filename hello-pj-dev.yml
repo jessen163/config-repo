@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: lz-rmq-clinet
+  rabbitmq:
+    addresses: 192.168.1.154:5672,192.168.1.155:5672,192.168.1.156:5672
+    username: admin
+    password: admin
+  data:
+    mongodb:
+      uri: mongodb://firm:cvtt1101@192.168.1.154:27017,192.168.1.155:27017,192.168.1.156:27017/acficmember
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.1.240:3306/acfic?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull
+      username: lzsql
+      password: Wstfc%&^875
+mybatis-plus:
+  global-config:
+    db-column-underline: true
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true
+autoconfig:
+  enable-autoconfig: false
