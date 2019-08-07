@@ -19,3 +19,5 @@ mybatis-plus:
     map-underscore-to-camel-case: true
 autoconfig:
   enable-autoconfig: false
+config:
+  password: 123456
